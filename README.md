@@ -92,18 +92,62 @@ ai-business-process-auditor/
 ├── .env.example            # env template (no secrets)
 ├── requirements.txt
 └── README.md
-
+```
 ---
 
 ## Установка / Installation
 
-TODO
+### 1. Clone repository
+
+```bash
+git clone https://github.com/paracriptus-oss/ai-business-process-auditor.git
+cd ai-business-process-auditor
+```
+
+### 2. Create virtual environment
+
+```bash
+python -m venv .venv
+```
+
+Activate:
+
+**Windows**
+
+```bash
+.venv\Scripts\activate
+```
+
+**Linux / Mac**
+
+```bash
+source .venv/bin/activate
+```
+
+### 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Configure environment
+
+Create `.env` file from template:
+
+```bash
+copy .env.example .env   # Windows
+cp .env.example .env     # Linux/Mac
+```
 
 ---
 
 ## Запуск / Run
 
-TODO
+Run Streamlit app:
+
+```bash
+streamlit run app/main.py
+```
 
 ---
 
@@ -115,7 +159,22 @@ TODO
 
 ## Формат отчёта / Report Structure
 
-TODO
+The API audit produces a normalized report with a fixed structure:
+
+- API аудит процесса
+- Резюме
+- Автоматизация (Уровень 1–3)
+- Быстрые улучшения
+- ROI гипотезы
+- Ограничения
+
+Formatting rules:
+
+- short headings (no parentheses)
+- unified tone and style
+- no model questions
+- no references like “based on card X”
+- broken-output detection + retry
 
 ---
 
