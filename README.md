@@ -1,10 +1,14 @@
 # AI Business Process Auditor
 
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![Streamlit](https://img.shields.io/badge/UI-Streamlit-red)
+![AI Audit](https://img.shields.io/badge/AI-Business%20Audit-black)
+
 AI-powered Streamlit system for auditing business processes using OFFLINE analysis and multi-stage API pipeline.
 
 ---
 
-## 🚀 What this project does
+## What this project does
 
 AI Business Process Auditor helps to:
 
@@ -21,7 +25,33 @@ The system supports:
 
 ---
 
+## Architecture at a glance
+
+```text
+User input (process description)
+↓
+OFFLINE passport extraction
+↓
+API Phase 1 — Diagnostic analysis
+↓
+API Phase 2 — Final audit report
+↓
+Reviewer normalization
+↓
+Structured AI Audit Report (Markdown)
+```
+
+Main layers:
+
+- OFFLINE layer → deterministic parsing & structuring
+- API layer → multi-stage AI analysis
+- Reviewer layer → style normalization & cleanup
+
+---
+
 ## Demo
+
+Example input: [examples/sample_process.md](examples/sample_process.md)
 
 ### Interface
 
