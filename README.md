@@ -23,7 +23,13 @@ The system supports:
 
 ## Demo
 
-(Screenshots will be added here)
+### Interface
+
+![Main UI](screenshots/ui-main.png)
+
+### API Report
+
+![API Report](screenshots/api-report.png)
 
 ---
 
