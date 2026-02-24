@@ -35,19 +35,36 @@ The system supports:
 
 ## 🇷🇺 Описание проекта
 
-TODO
+AI Business Process Auditor — это Streamlit-приложение для AI-аудита бизнес-процессов.
+
+Система сочетает:
+
+- OFFLINE анализ (стабильный fallback)
+- API аудит через многофазный AI pipeline
+- нормализацию итогового отчёта через reviewer-pass
 
 ---
 
 ## 🇬🇧 English Description
 
-TODO
+AI Business Process Auditor is a Streamlit-based system for AI-powered business process auditing.
+
+It combines:
+
+- OFFLINE deterministic analysis
+- multi-phase API audit pipeline
+- reviewer pass for output normalization
 
 ---
 
 ## Возможности / Features
 
-TODO
+- OFFLINE process passport extraction
+- API audit with multi-phase generation
+- reviewer-based normalization
+- structured audit reports
+- markdown export
+- Streamlit dual-column UI
 
 ---
 
@@ -159,7 +176,14 @@ streamlit run app/main.py
 
 ## API Configuration
 
-TODO
+The project uses `.env` configuration.
+
+Main parameters:
+
+- OPENAI_API_KEY
+- OPENAI_MODEL
+- OPENAI_BASE_URL
+- LLM_MODE (offline / api)
 
 ---
 
@@ -186,7 +210,10 @@ Formatting rules:
 
 ## Roadmap
 
-TODO
+- [ ] add cloud deployment
+- [ ] PDF export
+- [ ] multi-process comparison
+- [ ] scoring metrics
 
 ---
 
