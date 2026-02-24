@@ -1,0 +1,18 @@
+# secrets
+.env
+*.env
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# streamlit
+.streamlit/
+
+# misc
+.DS_Store
+
+# pycharm
+.idea/
