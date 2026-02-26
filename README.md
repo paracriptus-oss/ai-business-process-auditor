@@ -155,6 +155,9 @@ ai-business-process-auditor/
 ├── requirements.txt
 └── README.md
 ```
+
+Docs: [Documentation Index](docs/index.md)
+
 ---
 
 ## Установка / Installation
